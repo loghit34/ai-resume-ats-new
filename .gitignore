@@ -86,3 +86,6 @@ htmlcov/
 .streamlit/secrets.toml
 .env
 .env.*
+frontend/.streamlit/secrets.toml
+.env
+.env.*
