@@ -83,3 +83,6 @@ htmlcov/
 # ==========================
 *.tmp
 *.temp
+.streamlit/secrets.toml
+.env
+.env.*
