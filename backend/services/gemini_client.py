@@ -6,7 +6,7 @@ import google.generativeai as genai
 
 logger = logging.getLogger('ats_resume_scorer')
 
-GEMINI_MODEL = 'gemini-1.5-flash'
+GEMINI_MODEL = 'gemini-2.0-flash'
 _initialized = False
 
 def _init_client():
