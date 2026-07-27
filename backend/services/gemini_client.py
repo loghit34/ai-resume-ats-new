@@ -228,7 +228,7 @@ Projects:
 Experience Descriptions:
 {experience}"""
 
-def validate_skills_with_projects(skills: List[str], projects: List[Dict], experience_entries: List[Dict]) -> Dict:
+def validate_skills_with_projects(skills: List[str], projects: List[Dict], experience_entries: List[Dict], embedder: Optional[Any] = None) -> Dict:
     if not skills:
         return {
             'validated_skills':      [],
