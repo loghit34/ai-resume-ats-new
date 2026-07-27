@@ -126,11 +126,11 @@ async def analyze_resume(
 
 @router.get('/health')
 async def health_check(request: Request):
-    """Health check — confirms models are loaded and the API is ready."""
+    """Health check — confirms the API is ready."""
+    import os
     return {
         'status':          'healthy',
-        'nlp_loaded':      request.app.state.nlp is not None,
-        'embedder_loaded': request.app.state.embedder is not None,
+        'gemini_configured': os.getenv('GEMINI_API_KEY') is not None,
     }
 
 @router.get('/history')
